@@ -2,6 +2,16 @@
 const express = require('express');
 const app = express();
 
+void Configure(app, env)
+{
+    // ...
+
+    app.UseCors(builder =>
+        builder.WithOrigins("https://jonhilton.io"));
+
+    app.UseHttpsRedirection();
+    app.UseMvc();
+}
 
 
 app.use(express.json());
