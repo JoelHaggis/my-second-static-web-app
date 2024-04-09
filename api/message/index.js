@@ -2,17 +2,6 @@
 const express = require('express');
 const app = express();
 
-void Configure(app, env)
-{
-    // ...
-
-    app.UseCors(builder =>
-        builder.WithOrigins("https://black-pond-07bc3a803.5.azurestaticapps.net"));
-
-    app.UseHttpsRedirection();
-    app.UseMvc();
-}
-
 
 app.use(express.json());
 
