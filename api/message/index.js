@@ -7,7 +7,7 @@ void Configure(app, env)
     // ...
 
     app.UseCors(builder =>
-        builder.WithOrigins("https://jonhilton.io"));
+        builder.WithOrigins("https://black-pond-07bc3a803.5.azurestaticapps.net"));
 
     app.UseHttpsRedirection();
     app.UseMvc();
